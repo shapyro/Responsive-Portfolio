@@ -109,16 +109,16 @@ aside {
   height: 130px;
 }
 
-/* footer {
+.footer {
   background: #ffffff;
-  border-bottom: thin solid #777777;
+  border-top: 8px solid #777777;
   overflow: auto;
   margin: 0 auto;
   padding: 30px;
   clear: both;
-} */
+}
 
-footer {
+/* footer {
   position: absolute;
   bottom: 0;
   height: 80px;
@@ -126,4 +126,24 @@ footer {
   background: #ffffff;
   padding: 30px;
   border-top: thin #ff5800;
+} */
+
+@media screen and (max-width: 980px) {
+  #shimmer {
+    width: 91%;
+    height: 91%;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+ background-color: yellow;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+ background-color: green;
+  }
 }
