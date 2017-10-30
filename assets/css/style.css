@@ -137,13 +137,58 @@ aside {
 }
 
 @media screen and (max-width: 768px) {
-  body {
- background-color: yellow;
+  .header {
+    width: 768px;
   }
-}
+
+  #shimmer {
+  width: 200px;
+  height: 200px;
+  float: left;
+  }
+
+  aside {
+    clear: both;
+    float: left;
+    margin: 0 0 30px 60px;
+  }
 
 @media screen and (max-width: 640px) {
-  body {
- background-color: green;
+  header {
+    margin: 0;
+  }
+  #name {
+    width: 640px;
+    margin: 0 auto;
+  }
+  .nav {
+    float: none;
+    width: 640px; 
+    text-align: center;
+    padding: 0;
+  }
+  #navlist {
+    padding: 30px;
+    clear: both;
+    font-size: 20px;
+  }
+  li+li::before {
+    content: "|";
+    padding: 0 1em;
+    color: #777777;
+    margin: 30px;
+  }
+  section {
+    width: 580px;
+    margin: 30px;
+  }
+  #shimmer {
+    width: 90%;
+    height: 90%;
+    float: none;
+  }
+  aside {
+    float: left;
+    margin: 0 0 30px 30px;
   }
 }
